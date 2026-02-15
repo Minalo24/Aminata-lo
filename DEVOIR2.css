@@ -1,0 +1,189 @@
+body{
+background-color: rgb(206, 184, 156);
+margin: 0;
+padding: 0;
+font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    color: brown;
+}
+/*en tete*/
+
+header{
+display:flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-top: 25px;
+gap: 30%;
+background-color: maroon;
+}
+
+ul{
+    list-style: none;
+    gap: 10px;
+    display: flex;
+    padding: 0;
+}
+.ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li a{
+    text-decoration: none;
+    font-style: 20px;
+    color: white;
+    background-color:sienna;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+li a:hover{
+    
+    color: white;
+    cursor: pointer; 
+    background-color: black;
+
+}
+section h1
+{ text-align: center;
+text-decoration: underline;
+margin-top: 15px;
+}
+
+
+
+/* A propos*/
+.photo img
+{
+    width: 400px;
+    height: 400px;
+    border-radius: 3%;
+    box-shadow: 0 4 6px;
+    transition: transform 5s;
+}
+.photo img:hover{
+  transform: scale(1.03);
+}
+
+.apropos div{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-top:  30px; ;
+   gap: 20%;
+}
+.texte{
+    color: brown;
+    text-align:justify;
+    max-width: 500px;
+}
+
+
+/* Competence*/
+.item {
+display: flex;
+margin-top: 50px;
+}
+.max {
+    width: 200px;
+    background-color:white;
+    height: 20px;
+    border-radius: 10px;
+
+}
+.valeur{
+    width: 95%;
+    height: 20px;
+    background-color: brown;
+    border-radius: 10px;
+}
+.valeur1{
+   width: 60%;
+    height: 20px;
+    background-color: rgb(46, 21, 130);
+    border-radius: 10px;  
+}
+.valeur2 
+{
+   width: 70%;
+    height: 20px;
+    background-color: rgb(160, 12, 93);
+    border-radius: 10px;
+}
+.section2{
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+
+/*Service*/
+
+.section3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30%;
+}
+.resaux{
+    width: 50%;
+    border-right: 2px solid black;
+    padding-right: 40px;
+}
+hr{
+    background-color: black;
+    height: 4px;
+} 
+ img{
+   
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.insta{
+    display: flex;
+    gap: 15%;
+    margin-bottom: 30px;
+}
+.whatsapp{
+    display: flex;
+margin-bottom: 30px;
+    gap: 15%;
+}
+.facebook{
+    display: flex;
+    gap: 15%;
+    margin-bottom: 30px;
+}
+/* En fin*/
+
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 6px;
+}
+/*RESPONSIVE*/
+@media(max-width:950px){
+
+    .section3{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reseaux, .formulaire{
+        width: 90%;
+        border-right: none;
+        padding-right: 0;
+    }
+
+}
